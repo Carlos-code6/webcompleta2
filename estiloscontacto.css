@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color:cadetblue;
+}
+/* Edición para pantallas de mas de 700px */  
+@media (min-width: 700px) {
+   /* Formateo cabecera de arriba */      
+.menu-contenedor {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+.menu-contenedor .logo img {
+    height: 70px;
+    width: auto;
+}
+.menu-contenedor .barra-menu {
+    list-style-type: none;
+}
+.menu-contenedor .barra-menu li {
+    display: inline-block;
+    padding:0 35px;
+}
+.menu-contenedor .barra-menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu-contenedor .barra-menu li a:hover {
+    color: darkgoldenrod;
+}
+/* Formateo de MAIN */
+main {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    padding: 20px 35px;
+    gap: 3em;
+
+}
+
+.articulo-principal {
+    
+    text-align: center;
+    width: 25%;
+}
+.articulo-secundario {
+    
+    text-align: center;
+    width: 25%;
+}
+aside {
+   
+    text-align: center;
+    width: 25%;
+}
+
+}
+/* Formateo de SECTION */
+
+.sello-empresa{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+.sello-empresa li {
+    display: flex;
+    list-style-type: none;
+    border: solid 3px;
+    font-size: 18px;
+    background-color:chartreuse;
+    padding: 0 80px;
+} 
+/* Formateo de FOOTER */
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+.rrss{
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    margin-top: 10px;
+    width: 60px;
+    height: 40px;
+    padding:0 10px; 
+     
+}  
+
+
+/*Edición para pantalas hasta 700px*/
+
+
+@media (max-width: 700px) {
+    /* Formateo cabecera de arriba 700px */
+    
+
+    .menu-contenedor {
+        
+        background-color: blue;
+        display: flex;
+        align-items:center;
+        width: auto;
+        height: 85px;
+        padding: 5px 10px;
+    }
+    
+    .menu-contenedor .logo img {
+        
+        height: 70px;
+        width: auto;
+    }
+    .menu-contenedor .barra-menu {
+
+    
+        list-style-type: none;
+    }
+    .menu-contenedor .barra-menu li {
+        position: fixed;
+        left: -300%;
+        display: inline-block;
+        padding:0 35px;
+    }
+    .menu-contenedor .barra-menu a {
+        
+        text-decoration: none;
+        color: white;
+    }
+    .menu-contenedor .barra-menu li a:hover {
+        
+        color: darkgoldenrod;
+    }
+
+h1 {
+    text-align: center;
+}
+
+/* Formateo de FOOTER 700px */
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+.rrss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer img{
+    margin-top: 10px;
+    width: 60px;
+    height: 40px;
+    padding:0 10px; 
+}
+}
+
